@@ -1,0 +1,50 @@
+app:
+  android:
+    flavorDimensions: "flavor-type"
+
+flavors:
+  development:
+    app:
+      name: "[DEV] Boilerplate"
+    android:
+      applicationId: "com.flutter.boilerplate.dev"
+      icon: "assets/launcher/launcher_icon.png"
+    ios:
+      bundleId: "com.flutter.boilerplate.dev"
+      icon: "assets/launcher/launcher_icon.png"
+
+  staging:
+    app:
+      name: "[STG] Boilerplate"
+    android:
+      applicationId: "com.flutter.boilerplate.stg"
+      icon: "assets/launcher/launcher_icon.png"
+    ios:
+      bundleId: "com.flutter.boilerplate.stg"
+      icon: "assets/launcher/launcher_icon.png"
+
+  production:
+    app:
+      name: "Boilerplate"
+    android:
+      applicationId: "com.flutter.boilerplate"
+      icon: "assets/launcher/launcher_icon.png"
+    ios:
+      bundleId: "com.flutter.boilerplate"
+      icon: "assets/launcher/launcher_icon.png"
+
+ide: vscode
+
+instructions:
+  - assets:download
+  - assets:extract
+  - android:icons
+  - android:androidManifest
+  - android:buildGradle
+  - ios:xcconfig
+  - ios:buildTargets
+  - ios:schema
+  - ios:icons
+  - ios:plist
+  - ide:config
+  - assets:clean
